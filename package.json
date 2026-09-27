@@ -1,0 +1,23 @@
+{
+  "name": "jev-demo-banking",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "frustration-check": "tsx --env-file=.env frustration-check.ts",
+    "combined-judgment": "tsx --env-file=.env combined-judgment.ts",
+    "check": "tsc --noEmit",
+    "scenario": "tsx --env-file=.env"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
