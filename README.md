@@ -139,4 +139,8 @@ Detalhes, variações de comando e a execução sem montar arquivo estão em [`_
 
 ---
 
-Feito por **Alexsander Valente Telles** ([@alevtelles](https://github.com/alevtelles)).
+Feito por **Alexsander Valente Telles**
+
+[![Website](https://img.shields.io/badge/%F0%9F%8C%90_Website-alexsander.app-1f2937)](https://www.alexsander.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-alexsander--valente-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexsander-valente/)
+[![GitHub](https://img.shields.io/badge/GitHub-alevtelles-181717?logo=github&logoColor=white)](https://github.com/alevtelles)
