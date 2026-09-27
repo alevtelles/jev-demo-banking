@@ -139,7 +139,7 @@ Detalhes, variações de comando e a execução sem montar arquivo estão em [`_
 
 ---
 
-Feito por **Alexsander**
+Desenvolvido por **Alexsander**
 
 [![Website](https://img.shields.io/badge/%F0%9F%8C%90_Website-alexsander.app-1f2937)](https://www.alexsander.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-alexsander--valente-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexsander-valente/)
