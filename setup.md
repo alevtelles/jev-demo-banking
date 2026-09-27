@@ -100,7 +100,7 @@ Se você só quer rodar os exemplos deste projeto específico (triagem de atendi
 
 ```sh
 git clone <url-do-repositorio>
-cd jev-demo-banking
+cd triagem-inteligente-com-jev
 npm ci
 ```
 
@@ -111,7 +111,7 @@ npm ci
 Esta é a árvore real do projeto: os dois arquivos-exemplo na raiz, os três estágios do tutorial (`1-estado/`, `2-perguntas/`, `3-respostas/`, cada um com suas subpastas nomeadas pelo caso de atendimento do Banco Aurora que demonstram), a documentação e os arquivos de configuração:
 
 ```
-jev-demo-banking/
+triagem-inteligente-com-jev/
 ├── .dockerignore
 ├── .env.example
 ├── .gitignore
@@ -227,7 +227,7 @@ O repositório inclui um `Dockerfile` e um `.dockerignore` na raiz, testados nes
 ### Construindo a imagem
 
 ```sh
-docker build -t jev-demo-banking .
+docker build -t triagem-inteligente-com-jev .
 ```
 
 ### Rodando um exemplo no container
@@ -235,7 +235,7 @@ docker build -t jev-demo-banking .
 A chave de API **nunca** é copiada para dentro da imagem: o `.dockerignore` exclui qualquer `.env`, mantendo só o `.env.example` como referência. Para rodar um exemplo de verdade, monte seu `.env` local dentro do container em tempo de execução:
 
 ```sh
-docker run --rm -v "$(pwd)/.env:/app/.env:ro" jev-demo-banking
+docker run --rm -v "$(pwd)/.env:/app/.env:ro" triagem-inteligente-com-jev
 ```
 
 Isso roda o comando padrão da imagem (`npm run frustration-check`) exatamente como rodaria localmente, usando o `.env` montado como somente leitura (`:ro`).
@@ -243,7 +243,7 @@ Isso roda o comando padrão da imagem (`npm run frustration-check`) exatamente c
 Para rodar um exemplo diferente do padrão:
 
 ```sh
-docker run --rm -v "$(pwd)/.env:/app/.env:ro" jev-demo-banking \
+docker run --rm -v "$(pwd)/.env:/app/.env:ro" triagem-inteligente-com-jev \
   npm run scenario 3-respostas/04-fila-priorizada-de-chamados/001-prioridade-com-peso.ts
 ```
 
@@ -252,7 +252,7 @@ docker run --rm -v "$(pwd)/.env:/app/.env:ro" jev-demo-banking \
 Se preferir não montar um arquivo dentro do container, passe a chave direto como variável de ambiente do Docker e chame `tsx` diretamente, sem a flag `--env-file` do `npm run`:
 
 ```sh
-docker run --rm -e TYPESAFE_API_KEY=sua-chave-aqui jev-demo-banking \
+docker run --rm -e TYPESAFE_API_KEY=sua-chave-aqui triagem-inteligente-com-jev \
   npx tsx frustration-check.ts
 ```
 

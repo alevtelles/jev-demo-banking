@@ -125,15 +125,15 @@ npm run check
 ## Docker
 
 ```sh
-docker build -t jev-demo-banking .
-docker run --rm -v "$(pwd)/.env:/app/.env:ro" jev-demo-banking
+docker build -t triagem-inteligente-com-jev .
+docker run --rm -v "$(pwd)/.env:/app/.env:ro" triagem-inteligente-com-jev
 ```
 
 Detalhes, variações de comando e a execução sem montar arquivo estão em [`_docs/setup.md`](_docs/setup.md).
 
 ## Leia mais
 
-- 📖 Artigo completo, com a explicação de cada padrão: [`_docs/cenario.md`](_docs/cenario.md)
+- 📖 Artigo completo, com a explicação de cada padrão: [alexsander.app.br/blog/jev-na-pratica-triagem-inteligente-de-atendimento-de-cartao-de-credito](https://alexsander.app.br/blog/jev-na-pratica-triagem-inteligente-de-atendimento-de-cartao-de-credito)
 - ⚙️ Setup do zero, dependências e Docker: [`_docs/setup.md`](_docs/setup.md)
 - 📚 Documentação oficial do SDK: [docs.typesafe.ai/sdk/javascript](https://docs.typesafe.ai/sdk/javascript)
 
